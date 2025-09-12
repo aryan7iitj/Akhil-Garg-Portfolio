@@ -5,21 +5,21 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Aryan Prajapati - Full Stack Developer",
-  description: "Full Stack Developer passionate about creating innovative web solutions and turning ideas into reality",
-  keywords: ["Full Stack Developer", "React", "Next.js", "Node.js", "Web Development", "Portfolio"],
-  authors: [{ name: "Aryan Prajapati" }],
-  creator: "Aryan Prajapati",
+  title: "Dr. Akhil Garg - Associate Professor & Battery Technology Expert",
+  description: "Associate Professor at Xi'an Jiaotong-Liverpool University specializing in battery thermal management, AI-driven optimization, and electric vehicle technologies",
+  keywords: ["Battery Technology", "Thermal Management", "AI Optimization", "Electric Vehicles", "Research", "Professor", "Energy Storage"],
+  authors: [{ name: "Dr. Akhil Garg" }],
+  creator: "Dr. Akhil Garg",
   openGraph: {
-    title: "Aryan Prajapati - Full Stack Developer",
-    description: "Full Stack Developer passionate about creating innovative web solutions and turning ideas into reality",
+    title: "Dr. Akhil Garg - Associate Professor & Battery Technology Expert",
+    description: "Associate Professor at Xi'an Jiaotong-Liverpool University specializing in battery thermal management, AI-driven optimization, and electric vehicle technologies",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aryan Prajapati - Full Stack Developer",
-    description: "Full Stack Developer passionate about creating innovative web solutions and turning ideas into reality",
+    title: "Dr. Akhil Garg - Associate Professor & Battery Technology Expert",
+    description: "Associate Professor at Xi'an Jiaotong-Liverpool University specializing in battery thermal management, AI-driven optimization, and electric vehicle technologies",
   },
 };
 
