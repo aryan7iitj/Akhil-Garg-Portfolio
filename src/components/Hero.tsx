@@ -278,7 +278,7 @@ const Hero = () => {
             >
               <span className="button-shine" />
               <FaGraduationCap />
-              View My Research
+              About Me
             </button>
             <button
               className="hero-3d-button"
