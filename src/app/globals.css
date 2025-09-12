@@ -1,0 +1,221 @@
+/* stylelint-disable at-rule-no-unknown */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg);
+  }
+}
+/* stylelint-enable at-rule-no-unknown */
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(17 24 39);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(30 64 175 / 0.5);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(30 64 175 / 0.7);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, rgb(147 197 253), rgb(59 130 246));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass-effect {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hover-lift {
+  transition: all 300ms;
+}
+
+.hover-lift:hover {
+  transform: scale(1.05);
+  box-shadow: 0 25px 50px -12px rgb(30 64 175 / 0.25);
+}
+
+@layer utilities {
+  /* Blob animation */
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+  
+  /* Fade in animation */
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+  
+  .animation-delay-600 {
+    animation-delay: 0.6s;
+  }
+  
+  .animation-delay-900 {
+    animation-delay: 0.9s;
+  }
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-3px); 
+  }
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.02);
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    background-size: 200% 100%;
+    background-position: -200% 0;
+  }
+  100% {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    background-size: 200% 100%;
+    background-position: 200% 0;
+  }
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Enhanced focus styles */
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:border-blue-500:focus {
+  border-color: rgb(59 130 246);
+  box-shadow: 0 0 0 3px rgb(59 130 246 / 0.1);
+}
+
+/* Custom gradient backgrounds */
+.bg-gradient-radial {
+  background: radial-gradient(ellipse at center, var(--tw-gradient-stops));
+}
+
+/* Enhanced glass morphism */
+.glass-effect {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Improved button hover effects */
+.hover\:shadow-2xl:hover {
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.hover\:shadow-blue-500\/25:hover {
+  box-shadow: 0 25px 50px -12px rgb(59 130 246 / 0.25);
+}
+
+/* Text selection */
+::selection {
+  background-color: rgb(30 64 175 / 0.3);
+  color: white;
+}
+
+::-moz-selection {
+  background-color: rgb(30 64 175 / 0.3);
+  color: white;
+}

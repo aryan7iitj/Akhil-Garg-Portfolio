@@ -1,0 +1,157 @@
+   
+Contact
+www.linkedin.com/in/akhil-
+garg-77a525139  (LinkedIn)
+Top Skills
+Topology
+Charging Systems
+Finite Element Analysis (FEA)Akhil Garg
+Director of Battery Design & Analysis Lab (BDAL)
+Wuhan, Hubei, China
+Summary
+I am Dr. Akhil Garg, is currently working as an Associate Professor
+at School of Chemistry and Materials Science at Xi'an Jiatong-
+Liverpool University at Suzhou, China (near Shanghai). This is
+a joint UK-China Inititative to establish a campus. Previously, he
+had worked at Mechanical Science and Engineering at Huazhong
+University of Science and Technology (HUST), China. He also taught
+course on “Battery failures” at China-European Union (EU) Institute
+of Cleaner and Renewable energy at HUST. He is also external
+advisory board member of BatCAT Project (about batteries) funded
+by EU..
+I did PhD Studies and Post doctorate from Nanyang Technological
+University (NTU), Singapore.
+Research and Teaching background:
+My current research areas include Thermal management of
+batteries; Multiphysics modelling; Topology design optimization for
+battery cooling plates design; Digital twins for EV batteries states
+estimation; Fast charging protocols optimization
+I am Associate Editor of ASME Journal of Electrochemical Energy
+Conversion and Storage; International Journal of Green energy;
+International Journal of Ambient Energy. I am PI of an energy
+storage project sponsored by Queen Mary University of London and
+my University.
+During my post-PhD experience, I have taught the following courses:
+(1) Engineering of Electric vehicles (EVs)
+(2) Batteries for EVs:
+Multidisciplinary Perspective
+(3) Renewable Energy and New Energy
+Technologies
+(4) Energy Storage Systems
+  Page 1 of 5
+
+   
+(5) Battery Management systems
+(6) Intelligent Energy Systems
+(7) Heat transfer
+Experience
+Xi'an Jiaotong-Liverpool University
+Associate Professor
+June 2025 - Present  (4 months)
+Suzhou, Jiangsu, China
+Dr. Akhil Garg is currently working as an Associate Professor at School of
+Chemistry and Materials Science at XJTLU. Previously, he had worked at
+Mechanical Science and Engineering at Huazhong University of Science and
+Technology (HUST), China and Indian Institute of Technology (IIT), Delhi.
+He also taught course on “Battery failures” at China-European Union (EU)
+Institute of Cleaner and Renewable energy at HUST. He is also external
+advisory board member of BatCAT Project (about batteries) funded by EU. His
+PhD is from School of Mechanical and Aerospace Engineering from Nanyang
+Technological University, Singapore. During his PhD, he has worked jointly
+with Aerospace Industry, Rolls-Royce (UK), Singapore for 2 years on Artificial
+Intelligence and Robust Design optimization from the year 2010-2012. His
+main research interests includes Machine learning for battery synthesis;
+Genetic programming; AI-driven Topology optimization for cleaner energy; He
+has been listed in Stanford Elsevier World's Top 2% Scientists List for the last
+2 years. He has experience of presiding over the Hubei NSFC (2023-2025)
+project on deep learning-driven topology optimization for battery cold plate
+design; Guangdong talent project (2016-2019); International academic project
+jointly with Queen Mary University of London (2022-2023) and St. Petersburg
+State University of Russia (2023-2024). He has published over 100 peer
+reviewed articles in this field and have scopus H-index of 47. 
+Link to my webpage profile: https://scholar.xjtlu.edu.cn/en/persons/AkhilGarg
+Huazhong University of Science and Technology
+2 years 4 months
+Director of Battery Design & Analysis Lab (BDAL)
+June 2023 - Present  (2 years 4 months)
+  Page 2 of 5
+
+   
+China
+Leading the Battery Design & Analysis Lab (BDAL) at Huazhong University of
+Science and Technology. I am managing the team of 20 students from multi-
+diverse backgrounds from China, Russia, India (IITs; NITs; etc.), Malaysia,
+Vietnam, and Bangladesh etc. in the following directions:
+(1) Real-time thermal management of battery packs in Electric Vehicles:
+Suppose, we are given with Industry problem where battery is already fitted
+in Electric car, how do we optimize the thermal management in real-time. Our
+team had specifically designed the AI-driven hardware monitoring system
+using reinforcement learning and controller design to efficiently monitor and
+optimize the flow rate parameters with time to maintain the temperature and
+temperature variations in the battery pack in the normal range.
+(2) Topology optimization of Battery packs cooling plates:
+Our team has been working with eminent industry partners to structurally
+design the entire Battery pack cooling plates (traditionally rectangular plates
+were used) so as to maximize the heat transfer rate, reduce pressure drop,
+reduce the weight, etc. 
+(3) Adaptive and Optimal fast charging technologies for improved battery life:
+Usually, the battery life decreases using fast charging methods as it increases
+heat generation rate. We had specifically designed a novel health-aware
+battery fast charging method that considers battery aging also while optimizing
+the charging protocols (CC-CV switch over point) in real-time.
+(4) Reusability of spent battery packs by intelligent identification and sorting
+of cells using robotics-based AI approach designed using non-destructive
+physics-based measurements:
+Our team is working on research problem to identify those cells in the spent
+batteries and estimate the remaining useful life using robotics-based-AI
+approach designed on non-destructive physics-based measurements.
+Associate Professor
+June 2023 - May 2025  (2 years)
+Hubei, China
+My current research areas include Thermal management of batteries;
+Multiphysics modelling; Topology design optimization for battery cooling plates
+  Page 3 of 5
+
+   
+design; Digital twins for EV batteries states estimation; Fast charging protocols
+optimization
+I am Associate Editor of ASME Journal of Electrochemical Energy Conversion
+and Storage; International Journal of Green energy; International Journal of
+Ambient Energy. I am PI of an energy storage project sponsored by Queen
+Mary University of London and my University.
+During my post-PhD experience, I have taught the following courses:
+(1) Engineering of Electric vehicles (EVs)
+(2) Batteries for EVs:
+Multidisciplinary Perspective
+(3) Renewable Energy and New Energy
+Technologies
+(4) Energy Storage Systems
+(5) Battery Management systems
+(6) Intelligent Energy Systems
+(7) Heat transfer
+Akhil Garg
+Associate Professor
+China-EU Institute of Cleaner and Renewable Energy
+School of Mechanical Science and Engineering
+Huazhong University of Science and Technology (HUST)
+Email: akhilgarg@hust.edu.cn
+Academic page link: http://english.mse.hust.edu.cn/info/1090/2192.htm
+Associate editor of the ASME Journal of Electrochemical Energy Conversion
+and Storage (ASME Scientific Citation Index (SCI)).
+Google link: https://scholar.google.com/citations?
+user=51TMv_AAAAAJ&hl=en&authuser=1
+Indian Institute of Technology, Delhi
+Assistant Professor
+May 2020 - March 2023  (2 years 11 months)
+New Delhi, Delhi, India
+汕头大学
+Associate Professor
+March 2016 - July 2019  (3 years 5 months)
+  Page 4 of 5
+
+   
+Education
+Nanyang Technological University Singapore
+Doctoral degree, Mechanical Engineering  · (August 2010 - March 2015)
+  Page 5 of 5
+
