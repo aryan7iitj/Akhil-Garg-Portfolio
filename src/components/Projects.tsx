@@ -1,6 +1,6 @@
 'use client'
 
-import { FaExternalLinkAlt, FaBook, FaFlask, FaBatteryFull, FaMicrochip, FaGraduationCap, FaUsers, FaTrophy, FaGlobe, FaUniversity } from 'react-icons/fa'
+import { FaExternalLinkAlt, FaBook } from 'react-icons/fa'
 
 export default function Projects() {
   return (

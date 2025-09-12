@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import { FaCode, FaGraduationCap, FaTrophy, FaUsers, FaBook, FaGlobe, FaBriefcase, FaAward, FaUniversity, FaBrain, FaBatteryFull, FaFlask, FaMicrochip, FaEdit, FaChalkboardTeacher } from 'react-icons/fa';
+import { FaGraduationCap, FaTrophy, FaBook, FaGlobe, FaBriefcase, FaAward, FaUniversity, FaBrain, FaBatteryFull, FaFlask, FaMicrochip, FaEdit, FaChalkboardTeacher } from 'react-icons/fa';
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('story');
@@ -145,7 +145,7 @@ const About = () => {
               <FaBriefcase style={{ fontSize: '1.5rem', color: '#1e40af' }} />
               <div>
                 <h3 style={{ color: 'white', fontSize: '1.25rem', marginBottom: '0.25rem' }}>Associate Professor</h3>
-                <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.9rem' }}>Xi'an Jiaotong-Liverpool University • Suzhou, China • June 2025 - Present (4 months)</p>
+                <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.9rem' }}>Xi&apos;an Jiaotong-Liverpool University • Suzhou, China • June 2025 - Present (4 months)</p>
               </div>
             </div>
             <ul style={{ color: 'rgba(255, 255, 255, 0.8)', paddingLeft: '1.25rem', lineHeight: 1.5, fontSize: '0.9rem' }}>
@@ -237,7 +237,7 @@ const About = () => {
             <ul style={{ color: 'rgba(255, 255, 255, 0.8)', paddingLeft: '1.25rem', lineHeight: 1.5, fontSize: '0.9rem' }}>
               <li>Conducted research in battery technology and thermal management systems</li>
               <li>Taught undergraduate and graduate courses in mechanical engineering</li>
-              <li>Supervised PhD and Master's students in their research projects</li>
+              <li>Supervised PhD and Master&apos;s students in their research projects</li>
             </ul>
           </div>
 
@@ -540,7 +540,7 @@ const About = () => {
             <FaTrophy style={{ fontSize: '2rem', color: '#1e40af', marginBottom: '0.75rem' }} />
             <h4 style={{ color: 'white', marginBottom: '0.5rem', fontSize: '1.1rem' }}>Stanford Top 2% Scientist</h4>
             <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.85rem', lineHeight: 1.4 }}>
-              Listed in Stanford Elsevier World's Top 2% Scientists List for 2022-2023
+              Listed in Stanford Elsevier World&apos;s Top 2% Scientists List for 2022-2023
               </p>
             </div>
           
@@ -819,7 +819,7 @@ const About = () => {
               pointerEvents: 'none'
             }} />
             <FaGraduationCap style={{ fontSize: '2.5rem', color: '#06b6d4', marginBottom: '0.75rem' }} />
-            <h3 style={{ color: 'white', fontSize: '1.25rem', marginBottom: '0.25rem' }}>Bachelor's Degree</h3>
+            <h3 style={{ color: 'white', fontSize: '1.25rem', marginBottom: '0.25rem' }}>Bachelor&apos;s Degree</h3>
             <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '1rem', marginBottom: '0.75rem' }}>Mechanical Engineering</p>
             <div style={{
               background: 'rgba(255, 255, 255, 0.1)',

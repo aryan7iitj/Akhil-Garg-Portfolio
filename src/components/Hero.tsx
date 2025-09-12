@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { FaStar, FaRocket, FaDownload, FaHeart, FaCode, FaBrain, FaUsers, FaGraduationCap, FaFlask, FaBatteryFull, FaMicrochip } from 'react-icons/fa';
+import { FaStar, FaGraduationCap, FaFlask, FaBatteryFull, FaMicrochip } from 'react-icons/fa';
 
 const Hero = () => {
   const [currentIcon, setCurrentIcon] = useState(0);

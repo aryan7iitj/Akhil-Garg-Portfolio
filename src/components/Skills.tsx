@@ -1,7 +1,7 @@
 'use client'
 
 import { FaBatteryFull, FaFlask, FaMicrochip, FaGraduationCap, FaBook, FaEdit, FaUsers, FaTrophy, FaGlobe, FaUniversity, FaBrain, FaCogs, FaChartLine, FaRocket } from 'react-icons/fa'
-import { SiPython, SiTensorflow, SiPytorch, SiPandas, SiScikitlearn, SiNumpy, SiCplusplus, SiC, SiDocker, SiJenkins } from 'react-icons/si'
+import { SiPython, SiTensorflow, SiPytorch, SiPandas, SiScikitlearn, SiNumpy, SiC } from 'react-icons/si'
 
 export default function Skills() {
   return (
