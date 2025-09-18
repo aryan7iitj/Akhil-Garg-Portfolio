@@ -933,45 +933,6 @@ const About = () => {
             {tabContent[activeTab].content}
           </div>
 
-          {/* Statistics */}
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
-            gap: '1.5rem',
-            marginTop: '2rem'
-          }}>
-            {[
-              { number: '100+', label: 'Publications', gradient: 'linear-gradient(to right, #60a5fa, #3b82f6)' },
-              { number: '47', label: 'H-index', gradient: 'linear-gradient(to right, #3b82f6, #1e40af)' },
-              { number: '20+', label: 'Lab Members', gradient: 'linear-gradient(to right, #1e40af, #06b6d4)' },
-              { number: '7', label: 'Courses Taught', gradient: 'linear-gradient(to right, #06b6d4, #3b82f6)' }
-            ].map((stat, index) => (
-              <div key={index} style={{ 
-                textAlign: 'center',
-                transition: 'transform 0.2s ease, box-shadow 0.2s ease'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-5px)';
-                e.currentTarget.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.2)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = 'none';
-              }}
-              >
-                <div style={{
-                  fontSize: '2rem',
-                  fontWeight: 900,
-                  background: stat.gradient,
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                  marginBottom: '0.5rem'
-                }}>{stat.number}</div>
-                <div style={{ color: 'rgba(255, 255, 255, 0.7)', fontWeight: 600, fontSize: '0.9rem' }}>{stat.label}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
     </>

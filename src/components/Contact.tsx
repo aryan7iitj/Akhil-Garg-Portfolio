@@ -53,13 +53,13 @@ export default function Contact() {
               <FaEnvelope style={{ fontSize: '3rem', color: '#1e40af', marginBottom: '1rem' }} />
               <h3 style={{ color: 'white', fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem' }}>Academic Email</h3>
               <p style={{ color: 'rgba(255, 255, 255, 0.7)', marginBottom: '1rem' }}>For research collaborations and academic inquiries</p>
-              <a href="mailto:akhilgarg@hust.edu.cn" style={{
+              <a href="mailto:akhil.garg@xjtlu.edu.cn" style={{
                 color: '#1e40af',
                 textDecoration: 'none',
                 fontWeight: 600,
                 fontSize: '1.1rem'
               }}>
-                akhilgarg@hust.edu.cn
+                akhil.garg@xjtlu.edu.cn
               </a>
             </div>
 

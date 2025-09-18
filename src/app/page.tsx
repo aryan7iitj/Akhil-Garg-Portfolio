@@ -6,6 +6,7 @@ import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
+import Publications from '@/components/Publications'
 import Contact from '@/components/Contact'
 import BackgroundElements from '@/components/BackgroundElements'
 
@@ -35,6 +36,7 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
+      <Publications />
       <Contact />
     </main>
   )

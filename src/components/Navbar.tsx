@@ -8,11 +8,14 @@ export default function Navbar() {
   useEffect(() => {
     const observerOptions = {
       root: null,
-      rootMargin: '-5% 0px -50% 0px', // More sensitive to section changes
+      rootMargin: '-20% 0px -20% 0px', // Better balance for section detection
       threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
     };
 
     const observer = new IntersectionObserver((entries) => {
+      // Get scroll position once at the beginning
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
       // Find the section with the highest intersection ratio
       let mostVisibleSection = null;
       let highestRatio = 0;
@@ -26,17 +29,37 @@ export default function Navbar() {
       
       if (mostVisibleSection) {
         // Only set active section if we're not at the very top (Hero section)
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrollTop > 100) { // Threshold to avoid Hero section
+        if (scrollTop > 50) { // Reduced threshold for better responsiveness
           setActiveSection(mostVisibleSection);
         } else {
           setActiveSection(''); // Clear active section when at top
+        }
+      } else {
+        // If no section is intersecting, check which section is closest to the viewport
+        const sections = ['about', 'skills', 'projects', 'publications', 'contact'];
+        let closestSection = null;
+        let minDistance = Infinity;
+        
+        sections.forEach((sectionId) => {
+          const element = document.getElementById(sectionId);
+          if (element) {
+            const rect = element.getBoundingClientRect();
+            const distance = Math.abs(rect.top - window.innerHeight / 2);
+            if (distance < minDistance) {
+              minDistance = distance;
+              closestSection = sectionId;
+            }
+          }
+        });
+        
+        if (closestSection && scrollTop > 50) {
+          setActiveSection(closestSection);
         }
       }
     }, observerOptions);
 
     // Observe all sections
-    const sections = ['about', 'skills', 'projects', 'contact'];
+    const sections = ['about', 'skills', 'projects', 'publications', 'contact'];
     sections.forEach((sectionId) => {
       const element = document.getElementById(sectionId);
       if (element) {
@@ -47,7 +70,7 @@ export default function Navbar() {
     // Add scroll listener to handle Hero section case
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop <= 100) {
+      if (scrollTop <= 50) {
         setActiveSection(''); // Clear active section when scrolling back to top
       }
     };
@@ -73,6 +96,9 @@ export default function Navbar() {
       }
       else if (sectionId === 'projects') {
         navbarHeight = -40; // Increase offset for Projects section to account for title margin
+      }
+      else if (sectionId === 'publications') {
+        navbarHeight = -30; // Adjust offset for Publications section
       }
       else if (sectionId === 'contact') {
         navbarHeight = -10; // Adjust offset for Contact section
@@ -247,13 +273,51 @@ export default function Navbar() {
                 }
               }}
             >
-              <span style={{ position: 'relative', zIndex: 1 }}>Publications</span>
+              <span style={{ position: 'relative', zIndex: 1 }}>Projects</span>
               <div 
                 className="button-underline"
                 style={{
                   position: 'absolute',
                   bottom: 0,
                   left: activeSection === 'projects' ? '0%' : '-100%',
+                  width: '100%',
+                  height: '2px',
+                  background: 'linear-gradient(to right, #60a5fa, #3b82f6)',
+                  transition: 'left 0.3s ease',
+                  borderRadius: '1px'
+                }}
+              />
+            </button>
+            <button 
+              onClick={() => scrollToSection('publications')}
+              className="nav-button"
+              style={getButtonStyle('publications')}
+              onMouseEnter={(e) => {
+                if (activeSection !== 'publications') {
+                  e.currentTarget.style.color = 'white';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                  e.currentTarget.style.filter = 'drop-shadow(0 0 10px rgba(255, 255, 255, 0.3))';
+                }
+                const underline = e.currentTarget.querySelector('.button-underline') as HTMLElement;
+                if (underline) underline.style.left = '0%';
+              }}
+              onMouseLeave={(e) => {
+                if (activeSection !== 'publications') {
+                  e.currentTarget.style.color = 'rgba(255, 255, 255, 0.8)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.filter = 'none';
+                  const underline = e.currentTarget.querySelector('.button-underline') as HTMLElement;
+                  if (underline) underline.style.left = '-100%';
+                }
+              }}
+            >
+              <span style={{ position: 'relative', zIndex: 1 }}>Publications</span>
+              <div 
+                className="button-underline"
+                style={{
+                  position: 'absolute',
+                  bottom: 0,
+                  left: activeSection === 'publications' ? '0%' : '-100%',
                   width: '100%',
                   height: '2px',
                   background: 'linear-gradient(to right, #60a5fa, #3b82f6)',
