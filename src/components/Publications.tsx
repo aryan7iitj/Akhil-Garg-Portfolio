@@ -124,8 +124,30 @@ export default function Publications() {
               padding: '2rem',
               border: '1px solid rgba(255, 255, 255, 0.1)',
               textAlign: 'center',
-              transition: 'transform 0.2s ease'
-            }}>
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+              position: 'relative',
+              overflow: 'hidden'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-8px) scale(1.02)';
+              e.currentTarget.style.boxShadow = '0 20px 40px rgba(59, 130, 246, 0.3)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0) scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+            >
+              <div style={{
+                position: 'absolute',
+                top: '-50%',
+                left: '-50%',
+                width: '200%',
+                height: '200%',
+                background: 'linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent)',
+                transform: 'rotate(45deg)',
+                animation: 'shimmer 3s infinite',
+                pointerEvents: 'none'
+              }} />
               <FaBookOpen style={{ fontSize: '2.5rem', color: '#60a5fa', marginBottom: '1rem' }} />
               <h3 style={{ color: 'white', fontSize: '2rem', fontWeight: 700, marginBottom: '0.5rem' }}>100+</h3>
               <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '1rem' }}>Publications</p>
@@ -136,8 +158,30 @@ export default function Publications() {
               padding: '2rem',
               border: '1px solid rgba(255, 255, 255, 0.1)',
               textAlign: 'center',
-              transition: 'transform 0.2s ease'
-            }}>
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+              position: 'relative',
+              overflow: 'hidden'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-8px) scale(1.02)';
+              e.currentTarget.style.boxShadow = '0 20px 40px rgba(16, 185, 129, 0.3)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0) scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+            >
+              <div style={{
+                position: 'absolute',
+                top: '-50%',
+                left: '-50%',
+                width: '200%',
+                height: '200%',
+                background: 'linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent)',
+                transform: 'rotate(45deg)',
+                animation: 'shimmer 3s infinite',
+                pointerEvents: 'none'
+              }} />
               <FaQuoteLeft style={{ fontSize: '2.5rem', color: '#10b981', marginBottom: '1rem' }} />
               <h3 style={{ color: 'white', fontSize: '2rem', fontWeight: 700, marginBottom: '0.5rem' }}>47</h3>
               <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '1rem' }}>H-index</p>
@@ -148,8 +192,30 @@ export default function Publications() {
               padding: '2rem',
               border: '1px solid rgba(255, 255, 255, 0.1)',
               textAlign: 'center',
-              transition: 'transform 0.2s ease'
-            }}>
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+              position: 'relative',
+              overflow: 'hidden'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-8px) scale(1.02)';
+              e.currentTarget.style.boxShadow = '0 20px 40px rgba(245, 158, 11, 0.3)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0) scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+            >
+              <div style={{
+                position: 'absolute',
+                top: '-50%',
+                left: '-50%',
+                width: '200%',
+                height: '200%',
+                background: 'linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent)',
+                transform: 'rotate(45deg)',
+                animation: 'shimmer 3s infinite',
+                pointerEvents: 'none'
+              }} />
               <FaExternalLinkAlt style={{ fontSize: '2.5rem', color: '#f59e0b', marginBottom: '1rem' }} />
               <h3 style={{ color: 'white', fontSize: '2rem', fontWeight: 700, marginBottom: '0.5rem' }}>5000+</h3>
               <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '1rem' }}>Citations</p>
@@ -162,118 +228,116 @@ export default function Publications() {
               <div
                 key={index}
                 style={{
-                  background: 'linear-gradient(135deg, rgba(30, 64, 175, 0.1), rgba(59, 130, 246, 0.05))',
+                  background: 'linear-gradient(135deg, rgba(30, 64, 175, 0.2), rgba(59, 130, 246, 0.2))',
                   borderRadius: '1rem',
                   padding: '2rem',
                   border: '1px solid rgba(255, 255, 255, 0.1)',
-                  transition: 'all 0.3s ease',
+                  transition: 'transform 0.2s ease, box-shadow 0.2s ease',
                   position: 'relative',
                   overflow: 'hidden'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-4px)';
-                  e.currentTarget.style.boxShadow = '0 20px 40px rgba(30, 64, 175, 0.2)';
-                  e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.3)';
+                  e.currentTarget.style.transform = 'translateY(-8px) scale(1.02)';
+                  e.currentTarget.style.boxShadow = '0 20px 40px rgba(30, 64, 175, 0.3)';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.transform = 'translateY(0) scale(1)';
                   e.currentTarget.style.boxShadow = 'none';
-                  e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
                 }}
               >
                 <div style={{
                   position: 'absolute',
-                  top: '0',
-                  left: '0',
-                  width: '4px',
-                  height: '100%',
-                  background: 'linear-gradient(to bottom, #3b82f6, #1e40af)',
-                  borderRadius: '0 2px 2px 0'
-                }}></div>
+                  top: '-50%',
+                  left: '-50%',
+                  width: '200%',
+                  height: '200%',
+                  background: 'linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent)',
+                  transform: 'rotate(45deg)',
+                  animation: 'shimmer 3s infinite',
+                  pointerEvents: 'none'
+                }} />
                 
-                <div style={{ marginLeft: '1rem' }}>
-                  <h3 style={{ 
-                    color: 'white', 
-                    fontSize: '1.25rem', 
-                    fontWeight: 600, 
-                    marginBottom: '1rem',
-                    lineHeight: '1.4'
-                  }}>
-                    {pub.title}
-                  </h3>
-                  
-                  <div style={{ 
-                    display: 'flex', 
-                    flexWrap: 'wrap', 
-                    gap: '1.5rem', 
-                    marginBottom: '1rem',
-                    alignItems: 'center'
-                  }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                      <FaUsers style={{ color: '#60a5fa', fontSize: '0.9rem' }} />
-                      <span style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.9rem' }}>
-                        {pub.authors}
-                      </span>
-                    </div>
-                    
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                      <FaBookOpen style={{ color: '#10b981', fontSize: '0.9rem' }} />
-                      <span style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.9rem' }}>
-                        {pub.journal}
-                      </span>
-                    </div>
-                    
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                      <FaCalendarAlt style={{ color: '#f59e0b', fontSize: '0.9rem' }} />
-                      <span style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.9rem' }}>
-                        {pub.year}
-                      </span>
-                    </div>
+                <h3 style={{ 
+                  color: 'white', 
+                  fontSize: '1.25rem', 
+                  fontWeight: 600, 
+                  marginBottom: '1rem',
+                  lineHeight: '1.4'
+                }}>
+                  {pub.title}
+                </h3>
+                
+                <div style={{ 
+                  display: 'flex', 
+                  flexWrap: 'wrap', 
+                  gap: '1rem', 
+                  marginBottom: '1rem',
+                  alignItems: 'center'
+                }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <FaUsers style={{ color: '#60a5fa', fontSize: '0.9rem' }} />
+                    <span style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.9rem' }}>
+                      {pub.authors}
+                    </span>
                   </div>
                   
-                  <div style={{ 
-                    display: 'flex', 
-                    justifyContent: 'space-between', 
-                    alignItems: 'center',
-                    flexWrap: 'wrap',
-                    gap: '1rem'
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <FaBookOpen style={{ color: '#10b981', fontSize: '0.9rem' }} />
+                    <span style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.9rem' }}>
+                      {pub.journal}
+                    </span>
+                  </div>
+                  
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <FaCalendarAlt style={{ color: '#f59e0b', fontSize: '0.9rem' }} />
+                    <span style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.9rem' }}>
+                      {pub.year}
+                    </span>
+                  </div>
+                </div>
+                
+                <div style={{ 
+                  display: 'flex', 
+                  justifyContent: 'space-between', 
+                  alignItems: 'center',
+                  flexWrap: 'wrap',
+                  gap: '1rem'
+                }}>
+                  <div style={{
+                    background: 'rgba(59, 130, 246, 0.2)',
+                    color: '#60a5fa',
+                    padding: '0.25rem 0.75rem',
+                    borderRadius: '9999px',
+                    fontSize: '0.875rem',
+                    fontWeight: 500
                   }}>
-                    <div style={{
-                      background: 'rgba(59, 130, 246, 0.2)',
+                    {pub.citations} citations
+                  </div>
+                  
+                  <a 
+                    href={pub.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.5rem',
                       color: '#60a5fa',
-                      padding: '0.25rem 0.75rem',
-                      borderRadius: '9999px',
-                      fontSize: '0.875rem',
-                      fontWeight: 500
-                    }}>
-                      {pub.citations} citations
-                    </div>
-                    
-                    <a 
-                      href={pub.link} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '0.5rem',
-                        color: '#60a5fa',
-                        textDecoration: 'none',
-                        fontSize: '0.9rem',
-                        fontWeight: 500,
-                        transition: 'color 0.2s ease'
-                      }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.color = '#93c5fd';
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.color = '#60a5fa';
-                      }}
-                    >
-                      <FaExternalLinkAlt />
-                      View on Google Scholar
-                    </a>
-                  </div>
+                      textDecoration: 'none',
+                      fontSize: '0.9rem',
+                      fontWeight: 500,
+                      transition: 'color 0.2s ease'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.color = '#93c5fd';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.color = '#60a5fa';
+                    }}
+                  >
+                    <FaExternalLinkAlt />
+                    View on Google Scholar
+                  </a>
                 </div>
               </div>
             ))}
