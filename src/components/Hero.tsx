@@ -4,35 +4,11 @@ import { FaStar, FaGraduationCap, FaFlask, FaBatteryFull, FaMicrochip } from 're
 
 const Hero = () => {
   const [currentIcon, setCurrentIcon] = useState(0);
-  const [typedText, setTypedText] = useState('');
-  const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
   const heroRef = useRef<HTMLElement>(null);
   
   const icons = [FaBatteryFull, FaFlask, FaMicrochip, FaGraduationCap];
-  
-  const fullText = "I am Dr. Akhil Garg, an Associate Professor specializing in battery technology and thermal management. My research focuses on AI-driven optimization, multiphysics modeling, and digital twins for electric vehicle batteries. I lead the Battery Design & Analysis Lab and have published over 100 peer-reviewed articles with an H-index of 47. Let's advance the future of sustainable energy together! 🔋";
 
-  // Typing effect
-  useEffect(() => {
-    if (isVisible && currentTextIndex < fullText.length) {
-      const timeout = setTimeout(() => {
-        setTypedText(fullText.slice(0, currentTextIndex + 1));
-        setCurrentTextIndex(prev => prev + 1);
-      }, 30);
-      return () => clearTimeout(timeout);
-    }
-  }, [currentTextIndex, isVisible, fullText]);
-
-  // Start typing effect immediately when component mounts
-  useEffect(() => {
-    if (isVisible) {
-      const timer = setTimeout(() => {
-        setCurrentTextIndex(0);
-      }, 100);
-      return () => clearTimeout(timer);
-    }
-  }, [isVisible]);
 
   // Icon rotation
   useEffect(() => {
@@ -115,6 +91,70 @@ const Hero = () => {
       >
 
         <div style={{ textAlign: 'center', maxWidth: '80rem', margin: '0 auto', position: 'relative', zIndex: 10 }}>
+          {/* Professor Image */}
+          <div 
+            className="hero-3d-image-container"
+            data-3d="true"
+            data-depth="30"
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              marginBottom: '2rem',
+              transformStyle: 'preserve-3d',
+              transition: 'all 0.3s ease',
+              opacity: isVisible ? 1 : 0,
+              transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+              animation: isVisible ? 'fadeInUp 0.8s ease-out' : 'none'
+            }}
+          >
+            <div
+              className="hero-3d-image-wrapper"
+              style={{
+                position: 'relative',
+                width: '200px',
+                height: '200px',
+                borderRadius: '50%',
+                background: 'rgba(255, 255, 255, 0.1)',
+                backdropFilter: 'blur(10px)',
+                border: '2px solid rgba(255, 255, 255, 0.2)',
+                padding: '4px',
+                transformStyle: 'preserve-3d',
+                transition: 'all 0.3s ease',
+                boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
+                overflow: 'hidden'
+              }}
+            >
+              <img
+                src="/IMG-20250919-WA0000.jpg"
+                alt="Dr. Akhil Garg"
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  borderRadius: '50%',
+                  filter: 'brightness(1.1) contrast(1.1)',
+                  transition: 'all 0.3s ease'
+                }}
+              />
+              {/* Glow effect overlay */}
+              <div
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  borderRadius: '50%',
+                  background: 'linear-gradient(135deg, rgba(30, 64, 175, 0.1) 0%, rgba(59, 130, 246, 0.1) 50%, rgba(30, 64, 175, 0.1) 100%)',
+                  opacity: 0,
+                  transition: 'opacity 0.3s ease',
+                  pointerEvents: 'none'
+                }}
+                className="image-glow-overlay"
+              />
+            </div>
+          </div>
+
           {/* Badge */}
           <div 
             className="hero-3d-badge"
@@ -127,14 +167,14 @@ const Hero = () => {
               padding: '0.5rem 1rem',
               background: 'rgba(255, 255, 255, 0.1)',
               borderRadius: '9999px',
-              marginBottom: '2rem',
+              //marginBottom: '0rem',
               backdropFilter: 'blur(10px)',
               border: '1px solid rgba(255, 255, 255, 0.2)',
               transformStyle: 'preserve-3d',
               transition: 'all 0.3s ease',
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
-              animation: isVisible ? 'fadeInUp 0.8s ease-out' : 'none'
+              animation: isVisible ? 'fadeInUp 0.8s ease-out 0.2s both' : 'none'
             }}
           >
             <FaStar style={{ color: '#fbbf24', fontSize: '0.875rem' }} />
@@ -158,7 +198,7 @@ const Hero = () => {
               transition: 'all 0.3s ease',
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
-              animation: isVisible ? 'fadeInUp 0.8s ease-out 0.2s both' : 'none'
+              animation: isVisible ? 'fadeInUp 0.8s ease-out 0.4s both' : 'none'
             }}
           >
             Hi, I&apos;m{' '}
@@ -191,7 +231,7 @@ const Hero = () => {
               transition: 'all 0.3s ease',
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
-              animation: isVisible ? 'fadeInUp 0.8s ease-out 0.4s both' : 'none'
+              animation: isVisible ? 'fadeInUp 0.8s ease-out 0.6s both' : 'none'
             }}
           >
             <div 
@@ -218,28 +258,6 @@ const Hero = () => {
             </span>
           </div>
 
-          {/* Description */}
-          <p 
-            className="hero-3d-description"
-            data-3d="true"
-            data-depth="10"
-            style={{
-              fontSize: '1.25rem',
-              color: 'rgba(255, 255, 255, 0.7)',
-              maxWidth: '48rem',
-              margin: '0 auto 3rem',
-              lineHeight: 1.6,
-              transformStyle: 'preserve-3d',
-              transition: 'all 0.3s ease',
-              opacity: isVisible ? 1 : 0,
-              transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
-              animation: isVisible ? 'fadeInUp 0.8s ease-out 0.6s both' : 'none',
-              minHeight: '3rem'
-            }}
-          >
-            {typedText}
-            <span className="typing-cursor" style={{ animation: 'blink 1s infinite' }}>|</span>
-          </p>
           
           {/* 3D Buttons */}
           <div 
@@ -311,6 +329,23 @@ const Hero = () => {
 
         <style jsx>{`
           /* Enhanced 3D Interactive Effects */
+          .hero-3d-image-container:hover {
+            transform: translateZ(35px) !important;
+          }
+
+          .hero-3d-image-wrapper:hover {
+            transform: translateZ(50px) scale(1.05) !important;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+          }
+
+          .hero-3d-image-wrapper:hover .image-glow-overlay {
+            opacity: 1 !important;
+          }
+
+          .hero-3d-image-wrapper:hover img {
+            filter: brightness(1.2) contrast(1.2) !important;
+          }
+
           .hero-3d-badge:hover {
             transform: translateZ(20px) !important;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
@@ -330,10 +365,6 @@ const Hero = () => {
             box-shadow: 0 15px 35px rgba(30, 64, 175, 0.4) !important;
           }
 
-          .hero-3d-description:hover {
-            transform: translateZ(15px) !important;
-            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3) !important;
-          }
 
           .hero-3d-button:hover {
             transform: translateZ(25px) scale(1.05) !important;
@@ -362,10 +393,6 @@ const Hero = () => {
             }
           }
 
-          @keyframes blink {
-            0%, 50% { opacity: 1; }
-            51%, 100% { opacity: 0; }
-          }
 
           /* Gradient Text - Static */
           .gradient-text {
@@ -425,9 +452,21 @@ const Hero = () => {
 
           /* Responsive adjustments */
           @media (max-width: 768px) {
+            .hero-3d-image-wrapper {
+              width: 150px !important;
+              height: 150px !important;
+            }
+            
             .hero-3d-button {
               padding: 0.875rem 1.5rem;
               font-size: 1rem;
+            }
+          }
+
+          @media (max-width: 480px) {
+            .hero-3d-image-wrapper {
+              width: 120px !important;
+              height: 120px !important;
             }
           }
         `}</style>
