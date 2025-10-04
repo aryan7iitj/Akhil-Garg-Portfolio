@@ -8,6 +8,12 @@ const Hero = () => {
   const heroRef = useRef<HTMLElement>(null);
   
   const icons = [FaBatteryFull, FaFlask, FaMicrochip, FaGraduationCap];
+  const iconTexts = [
+    "I advance battery technology",
+    "I innovate through research",
+    "I develop cutting-edge solutions",
+    "I educate future scientists"
+  ];
 
 
   // Icon rotation
@@ -254,7 +260,7 @@ const Hero = () => {
               <CurrentIcon style={{ fontSize: '1.5rem', color: '#1e40af' }} />
             </div>
             <span style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '1.25rem', fontWeight: 600 }}>
-              I advance battery technology
+              {iconTexts[currentIcon]}
             </span>
           </div>
 
